@@ -1,4 +1,4 @@
-rails new AppName --database=postgresql --api
+rails new colliebuddz-backend --database=postgresql --api
 rails g resource
 rails db:migrate
 rails db:seed
@@ -10,5 +10,7 @@ Foundational Rails Building Blocks/Process: DB Tables -> Models -> Active Record
 For API:
 	in Gemfile, uncomment
 	gem ‘rack-cors’
-	in application.rb, include
-	config.middleware.insert_before…
+	# in application.rb, include
+	# config.middleware.insert_before…
+
+rails g migration create_TableNames att:type att2:type
